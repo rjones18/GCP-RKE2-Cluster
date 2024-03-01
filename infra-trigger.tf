@@ -5,7 +5,7 @@ resource "google_cloudbuild_trigger" "example" {
   service_account = "projects/alert-flames-286515/serviceAccounts/cloudbuildaccount@alert-flames-286515.iam.gserviceaccount.com"
 
   trigger_template {
-    repo_name   = "github_rjones18_gcp-rke2-cluster-zarf"
+    repo_name   = "github_rjones18_gcp-rke2-cluster"
     branch_name = "main"
   }
   filename = "cloudbuild.yaml"
