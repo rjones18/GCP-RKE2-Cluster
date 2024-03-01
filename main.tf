@@ -14,6 +14,7 @@ resource "google_compute_instance" "master_node" {
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-2004-lts" # Ubuntu 20.04 LTS
+      size  = 20  // Set the boot disk size to 20 GB
       labels = {
         my_label = "value"
       }
@@ -58,7 +59,6 @@ resource "google_compute_instance" "worker_nodes1" {
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-2004-lts" # Ubuntu 20.04 LTS
-      size  = 20  // Set the boot disk size to 20 GB
       labels = {
         my_label = "value"
       }
