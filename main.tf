@@ -1,5 +1,5 @@
 resource "google_service_account" "default" {
-  account_id   = "rke2-custom-sa"
+  account_id   = "rke2-custom-sa-2"
   display_name = "Custom SA for VM Instance"
 }
 
